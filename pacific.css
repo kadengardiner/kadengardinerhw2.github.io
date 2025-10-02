@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to top, rgb(46, 91, 143), rgb(195, 213, 236));
+}
+
+#wrapper {
+  max-width: 800px;
+  margin: 24px auto;
+  background: #fff;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav content"
+    "nav footer";
+  grid-template-columns: 200px 1fr;
+}
+
+header {
+  grid-area: header;
+  background: url("sunset.jpg") center/cover no-repeat;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-left: 5px;
+}
+
+nav {
+  grid-area: nav;
+  background: #cfe4f5;
+  padding: 15px;
+}
+
+#content {
+  grid-area: content;
+  padding: 20px;
+}
+
+footer {
+  grid-area: footer;
+  padding: 12px;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 10px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000033;
+}
+
+nav a:hover {
+  color: #89b3e9;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 2px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  color: #3399CC;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 2px;
+  padding-bottom: 15px;
+}
+
+#content img {
+  float: left;
+  max-width: 360px;
+  height: auto;
+  margin: 0 30px 14px 0;
+}
+
+#content p {
+  margin: 0 0 8px 20px;
+  margin-left: -20px;
+}
+
+#content ul {
+  margin: 0;
+  padding-left: 70px;
+  list-style-image: url(marker.gif);
+  list-style-position: outside;
+}
+
+#content ul li:nth-child(n+4) {
+  clear: left;
+}
+
+#content .resort {
+  color: #2a6f97;
+  font-weight: 700;
+}
+
+#contact {
+  clear: both;
+  margin-top: 14px;
+  font-size: 90%;
+}
